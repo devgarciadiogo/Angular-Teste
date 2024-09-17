@@ -16,7 +16,7 @@ export class AppComponent {
     this.cepService.buscarCep(cep).subscribe(
       (dados) => {
         this.resultadoCep = dados;
-      },
+      },     
       (erro) => {
         console.error('Erro ao buscar o CEP', erro);
       }
